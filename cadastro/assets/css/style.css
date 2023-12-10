@@ -129,6 +129,28 @@ body {
     color: #000000be;
 }
 
+.function-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.function-input {
+    display: flex;
+    align-items: center;
+}
+
+.function-input input {
+    margin-right: 0.35rem;
+}
+
+.function label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
 .continue-button button {
     width: 100%;
     margin-top: 2.5rem;
@@ -189,6 +211,21 @@ body {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
+    .function-inputs {
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .function-input {
+        margin-top: 2rem;
+    }
+    .function-group {
+        flex-direction: column;
+    }
+    .function-input {
+        margin-top: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 665px) {
@@ -203,6 +240,21 @@ body {
         max-height: 15rem;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .function-inputs {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .function-input {
+        margin-top: 1rem;
+    }
+    .function-group {
+        flex-direction: column;
+    }
+    .function-input {
+        margin-top: 0.25rem;
     }
 }
 
@@ -228,12 +280,6 @@ body {
 
 .input-box.error input {
     border-color: #ff3b25;
-
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #000000;
 }
 
 .input-box.error a {
