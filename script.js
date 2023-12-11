@@ -11,19 +11,15 @@ revelar.reveal('.extras',{
 revelar.reveal('.scroll-text1',{
     duration: 2000,
     distance: '90px',
-    delay: 500
+    delay: 500,
+    origin: 'left'
 })
 
 revelar.reveal('.scroll-img',{
     duration: 2000,
     distance: '90px',
-    delay: 1000
-})
-
-revelar.reveal('.scroll-text2',{
-    duration: 2000,
-    distance: '90px',
-    delay: 500
+    delay: 1000,
+    origin: 'right'
 })
 
 //dark e light mode

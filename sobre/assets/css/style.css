@@ -16,7 +16,7 @@
 html,body {
     height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     transition: .5s;
     background-image: linear-gradient(white, #0c0ce94d);
 }
@@ -28,7 +28,7 @@ header {
 
 .logo {
     width: 50%;
-    display: flex;    
+    display: flex; 
 }
 
 .logo img {
@@ -79,7 +79,7 @@ header {
 }
 
 .menu .atual {
-    color: #0c0ce94d;
+   color: #0c0ce94d;
 }
 
 section.container {
@@ -89,62 +89,109 @@ section.container {
 
 .extras {
     position: absolute;
-    bottom: -550px;
-    right: -550px;
-    width: 1200px;
-    height: 1200px;
-    border-radius: 50%;
+    bottom: 50px;
+    right: 850px;
+    width: 900px;
+    height: 500px;
+    border-radius: 80px;
     background-color: #0c0ce946;
-    visibility: hidden;
+}
+
+.plus {
+    position: absolute;
+    top: 600px;
+    left: 900px;
+    width: 900px;
+    height: 500px;
+    border-radius: 80px;
+    background-color: #0c0ce946;
+}
+
+.mais {
+    position: absolute;
+    top: 1230px;
+    right: 850px;
+    width: 900px;
+    height: 500px;
+    border-radius: 80px;
+    background-color: #0c0ce946;
 }
 
 .extras img {
     width: 30rem;
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-left: 325px;
     position: absolute;
 }
 
-.texto-container {
-    margin-top: 90px;
+.plus img {
+    width: 30rem;
+    margin-top: 20px;
+    margin-left: 90px;
+    position: absolute;
 }
 
-.texto-container h1 {
+.mais img {
+    width: 30rem;
+    margin-top: 20px;
+    margin-left: 325px;
+    position: absolute;
+}
+
+.texto-container1 {
+    margin-top: 90px;
+    margin-left: 800px;
+}
+
+.texto-container1 h1 {
     font-size: 50px;
 }
 
-.texto-container p {
-    margin: 20px 0;
+.texto-container1 p {
+    margin: 50px 0;
     color: #000;
     font-size: 20px;
     font-weight: bold;
     max-width: 800px;
+    position: relative;
 }
 
-.texto-container button {
-    width: 120px;
-    height: 30px;
+.texto-container2 {
+    margin-top: 230px;
+    margin-left: 90px;
+    margin-right: 700px;
+}
+
+.texto-container2 h1 {
+    font-size: 50px;
+}
+
+.texto-container2 p {
+    margin: 50px 0;
+    color: #000;
     font-size: 20px;
-    border: 0;
-    border-radius: 10px;
-    background-color: #D5A9CF;
-    cursor: pointer;
+    font-weight: bold;
+    max-width: 800px;
+    position: relative;
 }
 
-.texto-container button a {
-    text-decoration: none;
-    color: #fff;
+.texto-container3 {
+    margin-top: 250px;
+    margin-left: 800px;
+    padding-bottom: 150px;
 }
 
-.scroll-text,.scroll-img {
-    visibility: hidden;
+.texto-container3 h1 {
+    font-size: 50px;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #0c0ce94d;
+.texto-container3 p {
+    margin: 50px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 800px;
+    position: relative;
 }
 
 /*dark mode*/
@@ -156,6 +203,14 @@ section.container {
 .logo .trilho.dark .indicador {
     left: 30px;
     background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0c0ce94d;
 }
 
 body.dark {
@@ -182,26 +237,29 @@ body.dark .extras {
     background-color: purple;
 }
 
+body.dark .plus {
+    background-color: purple;
+}
+
+body.dark .mais {
+    background-color: purple;
+}
+
 body.dark .menu .atual {
     color: purple;
 }
 
-@media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
+body.dark ::-webkit-scrollbar {
+    width: 10px;
+}
 
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
+body.dark::-webkit-scrollbar-thumb {
+    background-color: purple;
 }
 
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
     .container {
         width: 75%;
         height: auto;
@@ -212,9 +270,14 @@ body.dark .menu .atual {
     .texto-container {
         max-width: 500px;
     }
+    .texto-container3 {
+        margin-top: 250px;
+        margin-left: 200px;
+        padding-bottom: 150px;
+    }
 }
 
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 10px) {
     .container {
         width: 75%;
         height: auto;
